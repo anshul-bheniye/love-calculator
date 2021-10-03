@@ -1,3 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap");
+
 body {
-  background-color: aquamarine;
+  background-image: linear-gradient(
+    140deg,
+    #4f46e5 25%,
+    #10b981 50%,
+    #4f46e5 75%
+  );
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+/* main div */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* select male female */
+.selection {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  padding: 100px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+/* buttons */
+.btn {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+button.go-back,
+button.result {
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+/* headings and paragraphs */
+h1,
+.sub-heading {
+  padding: 20px;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.para {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/* type input */
+input#first,
+input#second {
+  font-size: 34px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }

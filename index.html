@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Estimator</title>
+    <title>Love Calculator</title>
+    <script src="https://kit.fontawesome.com/25c119fea3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+     <h1>Love Calculator</h1>  
+        <h2 class="sub-heading">Select the following pair you are comparing</h2>
+        <div class="selection">
+         <p class="one"><i class="fas fa-male"></i>  <i class="fas fa-female"></i></p>
+         <p class="two"><i class="fas fa-male"></i>  <i class="fas fa-male"></i></p>
+         <p class="three"><i class="fas fa-female"></i>  <i class="fas fa-female"></i></p>
+         <p class="four"><i class="fas fa-female"></i>  <i class="fas fa-male"></i></p>  
+        </div>
+
+        <div class="inputs" hidden>
+            <input type="text" id="first" class="name-input-one" placeholder="enter name here"  required>
+            <input type="text" id="second" class="name-input-two" placeholder="enter name here"  required>
+        </div>      
+
+        <div class="output" hidden>
+            <h3> 📈 Report Card</h3>
+            <div class="name-output">
+                <p class="para"> 📊 Here are my calculations!</p>
+                <h3> 🐦 LoveBird One</h3>
+                <p class="love-bird-one para" ></p>
+                <h3> 🐦 LoveBird Two</h3>
+                <p class="love-bird-two para" ></p>
+                <h3> 🚤 Boat Status</h3>
+                <p class="ship-status para" ></p>
+                <h3> 💘 Love Score</h3>
+                <p class="love-score para" ></p>
+                <h3> 🔎 End Of Report</h3>
+                <p class="quote para" ></p>
+            </div>
+        </div> 
+         <div class="btn">
+        <button class="go-back" hidden> <i class="fas fa-less-than"></i><i class="fas fa-less-than"></i> Select Again</button>
+
+        <button class="result" hidden>Check Now <i class="fas fa-greater-than"></i><i class="fas fa-greater-than"></i></button>         
+        </div>
+        <p class="err para"></p>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
