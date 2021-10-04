@@ -90,3 +90,19 @@ input#second {
   justify-content: space-around;
   list-style: none;
 }
+
+/* media queries */
+@media screen and (max-width: 659px) {
+  .selection {
+    flex-direction: column;
+    align-items: center;
+  }
+  input#first,
+  input#second {
+    font-size: 24px;
+  }
+  button.go-back,
+  button.result {
+    font-size: 20px;
+  }
+}
