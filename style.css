@@ -73,3 +73,20 @@ input#second {
   border-radius: 20px;
   margin-bottom: 20px;
 }
+
+/* footer */
+.footer {
+  border-top: 1px solid white;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.footer .link {
+  color: white;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
