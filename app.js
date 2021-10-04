@@ -120,27 +120,38 @@ function determine(){
     birdTwo.innerHTML = secondInput.value;
     
 
-    if(randomNumber < 25 ){
-        shipStatus.innerText = "☹️ Sinking in inevitable ";
-        loveScore.innerText = `${randomNumber}/100`;
-        quote.innerText = "💔 Forget about this one.";
-    } else if (randomNumber <= 50){
-        shipStatus.innerText = "☹️ Caught in cyclone ";
-        loveScore.innerText = `${randomNumber}/100`;
-        quote.innerText = "💔 Better luck next time.";
-    } else if (randomNumber <= 75){
-        shipStatus.innerText = "🙂 May the winds be with you ";
-        loveScore.innerText = `${randomNumber}/100`;
-        quote.innerText = "😉 Seeing slight hope for you";
-    } else if (randomNumber <= 100){
-        shipStatus.innerText = "😍 Waiting for you!";
-        loveScore.innerText = `${randomNumber}/100`;
-        quote.innerText = "😘 No one can stop you";
-    } 
+    
+
+if(firstInput.value == "" || secondInput.value == ""  || firstInput.value === (!isNaN===true) || secondInput.value === (!isNaN===true)){
+        output.style.display = "none";
+        err.innerText = "You can only enter text | Page will refresh automatically | Try again";
+        setTimeout(function greet() {
+            location.reload();
+        }, 2000);
+        footer.style.display="none";
+    } else{
+        if(randomNumber < 25 ){
+            shipStatus.innerText = "☹️ Sinking in inevitable ";
+            loveScore.innerText = `${randomNumber}/100`;
+            quote.innerText = "💔 Forget about this one.";
+        } else if (randomNumber <= 50){
+            shipStatus.innerText = "☹️ Caught in cyclone ";
+            loveScore.innerText = `${randomNumber}/100`;
+            quote.innerText = "💔 Better luck next time.";
+        } else if (randomNumber <= 75){
+            shipStatus.innerText = "🙂 May the winds be with you ";
+            loveScore.innerText = `${randomNumber}/100`;
+            quote.innerText = "😉 Seeing slight hope for you";
+        } else if (randomNumber <= 100){
+            shipStatus.innerText = "😍 Waiting for you!";
+            loveScore.innerText = `${randomNumber}/100`;
+            quote.innerText = "😘 No one can stop you";
+        } 
+}
 
     setTimeout(function greet() {
-        err.innerText = 'Thank-You! For Using This Application.'
-    }, 3000)
+        err.innerText = 'Thank-You! For Using This Application.';
+    }, 4000)
     
 }
 
