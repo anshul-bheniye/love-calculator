@@ -87,7 +87,8 @@ goback.addEventListener('click', rewind);
 
 let firstInput = document.querySelector('.name-input-one');
 let secondInput = document.querySelector('.name-input-two');
-
+let selection =  document.querySelector('.selection');
+// report card
 let output = document.querySelector('.output');
 let nameOutput = document.querySelector('.name-output');
 let birdOne = document.querySelector('.love-bird-one');
@@ -97,19 +98,19 @@ let loveScore = document.querySelector('.love-score');
 let quote = document.querySelector('.quote');
 let err = document.querySelector('.err');
 
- 
 let randomNumber = Math.floor(Math.random()*100)+1;
+
+// footer
+let footer = document.querySelector('.footer');
 
 // check now button
 function forDetermine(){
     inputs.style.display="none";
-    one.style.display="none";
-    two.style.display="none";
-    three.style.display="none";
-    four.style.display="none";
+    selection.style.display="none";
     goback.style.display="none";
     result.style.display="none";
     output.style.display = "block";
+    footer.style.display= "block";
 }
 
 function determine(){
@@ -144,4 +145,3 @@ function determine(){
 }
 
 result.addEventListener('click', determine);
-
